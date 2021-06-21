@@ -1,0 +1,95 @@
+# MySQL Obrigatório!
+mysql:
+  host: "54.39.243.108"
+  port: 3306
+  user: "u2700_BRg7TGnW3Z"
+  pass: "EOkHjSf!9+aj7zPd^3jYGSH="
+  database: "s2700_rankup"
+
+main-menu:
+  titulo: "Top das galaxias"
+  rows: 6
+  itens:
+    vip:
+      slot: 16
+      material: "DIAMOND_SWORD"
+      durabilidade: 0
+      nome: "asdasd"
+      lore:
+        - ''
+        - ' Se você é vip tem um kit te esperando'
+        - ' aqui!'
+        - ''
+        - ' Clique direito: Preview'
+        - ' Clique esquerdo: Pegar o kit'
+        - ''
+    rank:
+      slot: 17
+      material: "DIAMOND_SWORD"
+      durabilidade: 0
+      nome: "asdasd"
+      lore:
+        - ''
+        - ' Aqui você pega seu kit de rank,'
+        - ' todos tem direito!'
+        - ''
+        - ' Clique direito: Preview'
+        - ' Clique esquerdo: Pegar o kit'
+        - ''
+    # Exemplo de kit personalizado
+    natal:
+      slot: 18
+      material: "DIAMOND_SWORD"
+      durabilidade: 0
+      nome: "asdasd"
+      lore:
+        - ''
+        - ' Kit NATAL!'
+        - ''
+        - ''
+        - ' Clique direito: Preview'
+        - ' Clique esquerdo: Pegar o kit'
+        - ''
+
+kits-vip:
+  vip:
+    delay-em-segundos: 86400
+    titulo: "Kit Vip"
+    permission: "kidarun.vip"
+    itens:
+      0:
+        material: DIAMOND_SWORD
+        durabilidade: 0
+        quantidade: 1
+        nome: "Kit Vip"
+        lore:
+          - ''
+          - ' Obtido no Kit Vip!'
+          - ''
+        encantamentos:
+          - 'DAMAGE_ALL:10'
+          - 'DURABILITY:10'
+    comandos:
+      - 'creditos add %player% 100'
+      - 'money add %player% 10000'
+kits-rank:
+  default:
+    delay-em-segundos: 86400
+    titulo: "Kit Rank"
+    permission: ""
+    itens:
+      0:
+        material: DIAMOND_SWORD
+        durabilidade: 0
+        quantidade: 1
+        nome: "Kit do Sem rank"
+        lore:
+          - ''
+          - ' Obtido no kit rank do primeiro rank!'
+          - ''
+        encantamentos:
+          - 'DAMAGE_ALL:1'
+          - 'DURABILITY:1'
+    comandos:
+      - 'creditos add %player% 10'
+      - 'money add %player% 1000'
